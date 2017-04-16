@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng"
+	verbose="5">
+	<test name="TestSuite1" preserve-order="true">
+		<classes>
+			<class name="day5.Test">
+				<methods>
+					<include name="methodA"></include>
+					<include name="methodB"></include>
+					<include name="methodC"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

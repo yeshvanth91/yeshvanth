@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng2" parallel="methods" thread-count="3"
+	verbose="5">
+	<test name="TestSuite1">
+		<classes>
+			<class name="day5.Test">
+				<methods>
+				<include name="methodD"></include>
+					<include name="methodE"></include>
+					<include name="methodF"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

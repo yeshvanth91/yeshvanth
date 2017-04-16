@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Failed suite [RepeatedTestCaseSuite]]">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com"/>
+  <parameter name="username" value="DemoSalesManager"/>
+  <test name="TestSuite1(failed)(failed)">
+    <classes>
+      <class name="day5.Edit_Account_TestCase">
+        <methods>
+          <include name="login_Taps"/>
+        </methods>
+      </class> <!-- day5.Edit_Account_TestCase -->
+      <class name="day5.AccounDe_activate_Testcase">
+        <methods>
+          <include name="de_activateAccount" invocation-numbers="0"/>
+          <include name="login_Taps"/>
+        </methods>
+      </class> <!-- day5.AccounDe_activate_Testcase -->
+      <class name="day5.Account_Merge_TestCase">
+        <methods>
+          <include name="mergeAccount" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day5.Account_Merge_TestCase -->
+    </classes>
+  </test> <!-- TestSuite1(failed)(failed) -->
+  <test name="TestSuite2(failed)(failed)">
+    <classes>
+      <class name="day5.Edit_Account_TestCase">
+        <methods>
+          <include name="login_Taps"/>
+          <include name="verify_EditAccountName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day5.Edit_Account_TestCase -->
+      <class name="day5.AccounDe_activate_Testcase">
+        <methods>
+          <include name="login_Taps"/>
+        </methods>
+      </class> <!-- day5.AccounDe_activate_Testcase -->
+    </classes>
+  </test> <!-- TestSuite2(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [RepeatedTestCaseSuite]] -->

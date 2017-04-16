@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [RepeatedTestCaseSuite]">
+  <parameter name="url" value="http://leaftaps.com"/>
+  <test name="TestSuite1(failed)">
+    <classes>
+      <class name="TestNG.LearnTestNG3">
+        <methods>
+          <include name="method1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNG.LearnTestNG3 -->
+      <class name="TestNG.LearnTestNG1">
+        <methods>
+          <include name="method3"/>
+        </methods>
+      </class> <!-- TestNG.LearnTestNG1 -->
+      <class name="TestNG.LearnTestNG2">
+        <methods>
+          <include name="method3"/>
+          <include name="methodB"/>
+          <include name="methodA"/>
+          <include name="methodD"/>
+          <include name="methodE"/>
+        </methods>
+      </class> <!-- TestNG.LearnTestNG2 -->
+    </classes>
+  </test> <!-- TestSuite1(failed) -->
+</suite> <!-- Failed suite [RepeatedTestCaseSuite] -->
