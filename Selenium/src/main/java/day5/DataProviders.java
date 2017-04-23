@@ -42,5 +42,13 @@ public class DataProviders {
 		data[1][0]="http://testng.org/doc/documentation-main.html#parallel-running";
 		return data;
 	}
+	@DataProvider(name="browser",parallel=true)
+	public Object[][] setBrowserName()
+	{
+		Object[][] browser=new Object[2][1];
+		browser[0][0]="chrome";
+		browser[1][0]="firefox";
+		return browser;
+	}
 
 }

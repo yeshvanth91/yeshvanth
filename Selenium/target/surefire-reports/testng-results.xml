@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="RepeatedTestCaseSuite" duration-ms="8784" started-at="2017-04-16T03:46:20Z" finished-at="2017-04-16T03:46:29Z">
+  <suite name="RepeatedTestCaseSuite" duration-ms="19530" started-at="2017-04-16T14:45:03Z" finished-at="2017-04-16T14:45:23Z">
     <groups>
     </groups>
-    <test name="TestSuite1" duration-ms="8784" started-at="2017-04-16T03:46:20Z" finished-at="2017-04-16T03:46:29Z">
+    <test name="TestSuite1" duration-ms="19530" started-at="2017-04-16T14:45:03Z" finished-at="2017-04-16T14:45:23Z">
       <class name="TestNG.LearnTestNG3">
-        <test-method status="PASS" signature="method1(java.lang.String)[pri:0, instance:TestNG.LearnTestNG3@fbd816]" name="method1" duration-ms="8760" started-at="2017-04-16T09:16:20Z" finished-at="2017-04-16T09:16:29Z">
+        <test-method status="PASS" signature="method1(java.lang.String)[pri:0, instance:TestNG.LearnTestNG3@1e8b406]" name="method1" duration-ms="19473" started-at="2017-04-16T20:15:03Z" finished-at="2017-04-16T20:15:23Z">
           <params>
             <param index="0">
               <value>

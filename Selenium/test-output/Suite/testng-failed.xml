@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]">
-  <parameter name="password" value="crmsfa"/>
-  <parameter name="url" value="http://leaftaps.com"/>
-  <parameter name="username" value="DemoSalesManager"/>
-  <test name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="FirefoxTest(failed)" parallel="methods">
+    <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="day4.CreateTestLead">
+      <class name="day5.MultiBrowser">
         <methods>
-          <include name="createTestLead"/>
+          <include name="invokeBrowser"/>
+          <include name="demoMethod"/>
         </methods>
-      </class> <!-- day4.CreateTestLead -->
+      </class> <!-- day5.MultiBrowser -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

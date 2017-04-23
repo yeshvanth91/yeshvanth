@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 16 08:18:27 IST 2017</td>
+<td>Started on:</td><td>Sun Apr 23 21:35:34 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49990 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28059 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,29 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNG.LearnTestNG1.method3()'><b>method3</b><br>Test class: TestNG.LearnTestNG1</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;name345&quot;}
-  (Session info: chrome=57.0.2987.133)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 139 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;GOD-PC-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\GOD-PC\AppData\Local\Temp\scoped_dir7976_20425}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e3a0ac10299daeaadc0e490bd32e8a25
-*** Element info: {Using=id, value=name345}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at TestNG.LearnTestNG1.method1(LearnTestNG1.java:34)
-	at TestNG.LearnTestNG1.method3(LearnTestNG1.java:41)
+<td title='day5.MultiBrowser.demoMethod()'><b>demoMethod</b><br>Test class: day5.MultiBrowser</td>
+<td><div><pre>java.lang.NullPointerException
+	at day5.MultiBrowser.demoMethod(MultiBrowser.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -123,29 +103,9 @@ Session ID: e3a0ac10299daeaadc0e490bd32e8a25
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace589604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace589604'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;name345&quot;}
-  (Session info: chrome=57.0.2987.133)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 139 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;GOD-PC-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\GOD-PC\AppData\Local\Temp\scoped_dir7976_20425}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e3a0ac10299daeaadc0e490bd32e8a25
-*** Element info: {Using=id, value=name345}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at TestNG.LearnTestNG1.method1(LearnTestNG1.java:34)
-	at TestNG.LearnTestNG1.method3(LearnTestNG1.java:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace16815450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16815450'><pre>java.lang.NullPointerException
+	at day5.MultiBrowser.demoMethod(MultiBrowser.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -172,8 +132,36 @@ Session ID: e3a0ac10299daeaadc0e490bd32e8a25
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>49</td>
-<td>TestNG.LearnTestNG1@a3426</td></tr>
+<td>0</td>
+<td>day5.MultiBrowser@1552920</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='day5.MultiBrowser.invokeBrowser()'><b>invokeBrowser</b><br>Test class: day5.MultiBrowser<br>Parameters: chrome</td>
+<td></td>
+<td>6</td>
+<td>day5.MultiBrowser@1552920</td></tr>
+<tr>
+<td title='day5.MultiBrowser.invokeBrowser()'><b>invokeBrowser</b><br>Test class: day5.MultiBrowser<br>Parameters: chrome</td>
+<td></td>
+<td>6</td>
+<td>day5.MultiBrowser@1552920</td></tr>
+<tr>
+<td title='day5.MultiBrowser.invokeBrowser()'><b>invokeBrowser</b><br>Test class: day5.MultiBrowser<br>Parameters: firefox</td>
+<td></td>
+<td>27</td>
+<td>day5.MultiBrowser@1552920</td></tr>
+<tr>
+<td title='day5.MultiBrowser.invokeBrowser()'><b>invokeBrowser</b><br>Test class: day5.MultiBrowser<br>Parameters: firefox</td>
+<td></td>
+<td>27</td>
+<td>day5.MultiBrowser@1552920</td></tr>
 </table><p>
 </body>
 </html>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestNG.LearnTestNG1">
+      <class name="day5.MultiBrowser">
         <methods>
-          <include name="method3"/>
+          <include name="demoMethod"/>
         </methods>
-      </class> <!-- TestNG.LearnTestNG1 -->
+      </class> <!-- day5.MultiBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

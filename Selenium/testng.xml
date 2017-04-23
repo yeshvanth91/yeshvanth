@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="RepeatedTestCaseSuite" parallel="false" thread-count="2"
-	verbose="5">
-	<!-- <groups> <run> <include name="smoke"></include> <exclude name="sanity"></exclude> 
-		</run> </groups> -->
-	<parameter name="url" value="http://leaftaps.com"></parameter>
-	<test name="TestSuite1" >
-	<!-- <packages>
-	<package name="TestNG"/>
-	</packages> -->
+<suite name="Suite" parallel="tests" thread-count="2">
+	<test name="ChromeTest">
+	<parameter name="browserName" value="chrome"/>
 		<classes>
-			<class name="TestNG.LearnTestNG3"></class>
+			<class name="day5.MultiBrowser" />
 		</classes>
 	</test>
-	<!-- <test name="TestSuite2" parallel="classes"> <classes> <class name="TestNG.LearnTestNG3"></class> 
-		<class name="TestNG.LearnTestNG4"></class> </classes> </test> -->
-</suite>
-
+	<test name="FirefoxTest">
+	<parameter name="browserName" value="firefox"/>
+		<classes>
+			<class name="day5.MultiBrowser" />
+		</classes>
+	</test>
+</suite> 
