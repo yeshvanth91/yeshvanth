@@ -1,0 +1,35 @@
+	public void takeSnap() {
+		//((JavascriptExecutor) driver).executeScript("scroll(0,5000);");
+		//take the screenshot of the entire home page and save it to a png file
+
+		try {
+			Screenshot screenshot = new AShot().shootingStrategy(new ViewportPastingStrategy(1000)).takeScreenshot(driver);
+			ImageIO.write(screenshot.getImage(), "PNG", new File("./snaps/snap/"+i+".jpg"));
+			i++;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		/*		File src = driver.getScreenshotAs(OutputType.FILE);
+		File dec = new File("./snaps/snap/"+this.getClass().getName() +i+ ".jpg");
+		try {
+			FileUtils.copyFile(src, dec);
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			System.err.println("Unknown exception occured" + e.getMessage());
+		}
+		i++;
+		return 0;*/
+	}
+
+
+dependency
+
+<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.4.12</version>
+		</dependency>
